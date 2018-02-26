@@ -2,12 +2,12 @@ package com.wanhe.springboottest.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 import org.springframework.web.servlet.config.annotation.CorsRegistry
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
-open class CorsConfiguration {
+open class CorsConfig {
     @Bean
     open fun corsConfigurer(): WebMvcConfigurer {
         return object : WebMvcConfigurerAdapter() {
